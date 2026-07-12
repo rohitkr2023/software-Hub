@@ -1,0 +1,59 @@
+{
+  "site": {
+    "name": "Software Hub",
+    "tagline": "Free Windows Software Downloads",
+    "itemsPerPage": 20,
+    "port": 3000
+  },
+  "paths": {
+    "storage": "./storage",
+    "database": "./database/database.sqlite"
+  },
+  "download": {
+    "loaderDurationSeconds": 5,
+    "suggestionsCount": 4
+  },
+  "ads": {
+    "provider": "adsterra",
+    "enabled": true,
+    "popunder": {
+      "enabled": true,
+      "zoneId": "https://www.effectivecpmnetwork.com/ah7q3cgd?key=1a5a84a80ec306688d6eebc027cf580c",
+      "page": "download",
+      "frequencyCapPerSession": 1,
+      "devices": ["desktop"]
+    },
+    "smartlink": {
+      "enabled": true,
+      "zoneId": "https://www.effectivecpmnetwork.com/ah7q3cgd?key=1a5a84a80ec306688d6eebc027cf580c",
+      "page": "download",
+      "frequencyCapPerSession": 1,
+      "devices": ["mobile"]
+    },
+    "nativeBanner": {
+      "enabled": true,
+      "zoneId": "1f9d57b8e6946c0b44684c1eab3bc12f",
+      "pages": ["home", "search"]
+    },
+    "banner": {
+      "enabled": true,
+      "zoneId": "5e4d610a045e7109af4fd4d05a926a2f",
+      "pages": ["softwareDetail"]
+    },
+    "socialBar": {
+      "enabled": true,
+      "zoneId": "5e4d610a045e7109af4fd4d05a926a2f",
+      "page": "download",
+      "dismissible": true
+    }
+  },
+  "admin": {
+    "sessionSecret": "super_secret_admin_session_key_123"
+  },
+  "ai": {
+    "enabled": true,
+    "provider": "local",
+    "apiKey": "",
+    "systemPrompt": "You are a helpful software download assistant. Suggest relevant programs from our library and explain their use."
+  }
+}

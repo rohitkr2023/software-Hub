@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Local databases (SQLite & local locks)
+database/database.sqlite
+database/database.sqlite-journal
+
+# Local storage uploads (mock files & icons)
+storage/
+
+# Vercel configuration & temp build outputs
+.vercel/
+
+# Environment credentials & keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
